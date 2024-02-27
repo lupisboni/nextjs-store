@@ -1,6 +1,10 @@
-export default function store(){
+import styles from "./page.module.css";
 
-    return(
-        <h1>store</h1>
-    )
+export default function Home() {
+  console.log('hola mundo pagina de inicio')
+  return (
+    <main className={styles.main}>
+      <h1>Hola Mundo</h1>
+    </main>
+  );
 }
