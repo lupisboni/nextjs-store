@@ -8,9 +8,12 @@ export default function Home() {
   
   return (
     <main>
-      <Hero/>
-      <Description/>
-      <MainProducts/>
+       <MainProducts/>
+      <h1>product</h1>
+
+      {/* <MainProducts/> */}
+
+      
     </main>
   )
 }
