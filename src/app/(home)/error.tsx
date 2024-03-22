@@ -8,7 +8,7 @@ export default function GlobalError({ reset }: ErrorPageProps) {
         <main className={styles.Error}>
             <h1 className={styles.Error__title}>Ha ocurrido un error</h1>
             <Image 
-            src='/images/error.png'
+            src='nextjs-store/public/images/error.png'
             width={500}
             height={500}
             alt='Error'
@@ -18,3 +18,5 @@ export default function GlobalError({ reset }: ErrorPageProps) {
         </main>
     )
 }
+
+//se vio el video 4.2
