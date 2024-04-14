@@ -8,7 +8,7 @@ export const getProducts = async () => {
           'X-Shopify-Access-Token': env.SHOPIFY_TOKEN
         })
       })
-      // throw new Error('Error')
+      //throw new Error('Error')
       const { products } = await response.json()
       return products
     } catch (error) {
