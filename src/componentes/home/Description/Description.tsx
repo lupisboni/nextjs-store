@@ -25,7 +25,9 @@ export const Description = () => {
         <Image 
         src="/images/description.jpeg"
         alt="products marketplace"
-        fill
+        // fill
+        width={300}
+        height={300}
         placeholder='blur'
         blurDataURL={PLACEHOLDER_IMAGE}
         />
