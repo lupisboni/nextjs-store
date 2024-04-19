@@ -1,15 +1,15 @@
 
 //import { ProductsWrapper } from "app/componentes/store/ProductCard"
-import { getProducts } from "app/services/shopify"
+import { getProducts } from "app/services/shopify/products"
 
 
-interface CategoryProps{
+interface CategoriesProps{
     params: {
         categories: string [],
         searchParams: string 
     }
 }
-export default async function Category(props: CategoryProps){
+export default async function Category(props: CategoriesProps){
 
     const products = await getProducts()
 

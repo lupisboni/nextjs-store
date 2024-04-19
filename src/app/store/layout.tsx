@@ -1,11 +1,21 @@
-export default function Layout ({ children }: {children : React.ReactNode}){
-    return(
-        <main>
+import { getCollections } from "app/services/shopify/collections"
+import Link from "next/link"
 
-<nav>navegacion de las categorias </nav>
+export default async function Layout({ children }: { children: React.ReactNode }) {
+  const collections = await getCollections()
 
-{children}
-
-        </main>
-    )
+  return (
+    <main>
+      <nav>
+        {
+          collections.map((collection) => (
+            <Link key={collection.id} href={'/store/' + collection.handle}>
+              {collection.title}
+            </Link>
+          ))
+        }
+      </nav>
+      {children}
+    </main>
+  )
 }
