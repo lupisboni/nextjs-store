@@ -3,6 +3,7 @@ import { ProductViewItemsOrder } from "./ProductViewItemsOrder";
 import styles from './ProductView.module.sass'
 
 import { useRouter } from "next/navigation";
+import { SanitizeHTML } from "app/components/shared/SanitizeHTML/SanitizeHTML";
 
 interface ProductViewProps {
   product: ProductType
